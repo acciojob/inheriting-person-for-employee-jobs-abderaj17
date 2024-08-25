@@ -1,25 +1,26 @@
-// complete this js code
 class Person{
     constructor(name, age){
-        this.name=name;
-        this.age=age;
+        this.name = name;
+        this.age = age;
     }
    greet(){
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
+    return `Hello, my name is ${this.name}, I am ${this.age} years old`;
    }
 }
+
 class Employee extends Person{
  constructor(name, age, jobTitle){
     super(name, age);
     this.jobTitle= jobTitle;
  }
  jobGreet(){
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+    return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
  }
 }
-const person1 = new Employee("Rakesh", 45, "Software Devloper");
 
-console.log(person1);
+const person1 = new Employee("Rakesh", 45, "Software Devloper");
+console.log(person1.greet());  // check the output
+console.log(person1.jobGreet()); // check the output
 
 // Do not change code below this line
 window.Person = Person;
