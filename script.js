@@ -18,9 +18,11 @@ class Employee extends Person{
  }
 }
 
-const person1 = new Employee("Rakesh", 45, "Software Developer");
-person1.greet();  // check the output
-person1.jobGreet(); // check the output
-// Do not change code below this line
+const person = new Person('John', 30);
+person.greet(); // Output: Hello, my name is John, I am 30 years old.
+
+const employee = new Employee('Jane', 25, 'Software Developer');
+employee.greet();    // Output: Hello, my name is Jane, I am 25 years old.
+employee.jobGreet(); 
 window.Person = Person;
 window.Employee = Employee;
