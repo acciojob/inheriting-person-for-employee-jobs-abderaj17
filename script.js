@@ -21,8 +21,7 @@ class Employee extends Person{
 const person = new Person('Alice', 25);
 person.greet(); // Output: Hello, my name is John, I am 30 years old.
 
-const employee = new Employee('Bob', 30, 'Manager');
-employee.greet();    // Output: Hello, my name is Jane, I am 25 years old.
+const employee = new Employee('Bob', 30, 'Manager');   // Output: Hello, my name is Jane, I am 25 years old.
 employee.jobGreet(); 
 window.Person = Person;
 window.Employee = Employee;
