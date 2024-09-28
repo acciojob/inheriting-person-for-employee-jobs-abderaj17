@@ -22,8 +22,8 @@ class Employee extends Person{
 }
 
 const person1 = new Employee("Rakesh", 45, "Software Developer");
-console.log(person1.greet());  // check the output
-console.log(person1.jobGreet()); // check the output
+person1.greet();  // check the output
+person1.jobGreet(); // check the output// check the output
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
