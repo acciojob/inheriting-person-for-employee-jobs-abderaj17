@@ -1,10 +1,13 @@
 class Person{
     constructor(name, age){
         this.name = name;
+class Person{
+    constructor(name, age){
+        this.name = name;
         this.age = age;
     }
    greet(){
-    console.log(`Hello, my name is ${this.name}, I am ${this.age} years old`);
+    return `Hello, my name is ${this.name}, I am ${this.age} years old`;
    }
 }
 
@@ -14,14 +17,13 @@ class Employee extends Person{
     this.jobTitle= jobTitle;
  }
  jobGreet(){
-    console.log (`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
+    return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
  }
 }
 
-const person1 = new Employee("Rakesh", 45, "Software Devloper");
+const person1 = new Employee("Rakesh", 45, "Software Developer");
 console.log(person1.greet());  // check the output
 console.log(person1.jobGreet()); // check the output
-
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
